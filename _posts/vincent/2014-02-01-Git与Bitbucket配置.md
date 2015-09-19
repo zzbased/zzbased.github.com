@@ -20,19 +20,19 @@ mac电脑上默认有安装git, 需要做的只是一些简单的配置。
 3. ssh-keygen 生成rsa的私钥和公钥。
 4. 创建ssh config.
 vi ~/.ssh/config。在里面输入下面内容：
-Host bitbucket.org
- IdentityFile ~/.ssh/id_rsa
-5. 然后把public key设置到bitbucket里。
-    设置成功后，执行“ssh -T git@bitbucket.org”测试是否OK。
+	Host bitbucket.org
+	IdentityFile ~/.ssh/id_rsa
+5. 然后把public key设置到bitbucket里。设置成功后，执行“ssh -T git@bitbucket.org”测试是否OK。
 6. 根据bitbucket的提示，在本地command shell里输入：
-mkdir /path/to/your/project
-cd /path/to/your/project
-git init
-git remote add origin ssh://git@bitbucket.org/zzbased/medcare.git
-echo "# This is my README" >> README.md
-git add README.md
-git commit -m "First commit. Adding a README."
-git push -u origin master
+
+	mkdir /path/to/your/project
+	cd /path/to/your/project
+	git init
+	git remote add origin ssh://git@bitbucket.org/zzbased/medcare.git
+	echo "# This is my README" >> README.md
+	git add README.md
+	git commit -m "First commit. Adding a README."
+	git push -u origin master
 
 7. over!
 
