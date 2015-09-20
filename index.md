@@ -7,7 +7,8 @@ tagline: Supporting tagline
 
 ## 分类
 
-- [文章分类](http://127.0.0.1:4000/categories.html)
+- [文章分类](https://zzbased.github.io/categories.html)
+- [标签分类](https://zzbased.github.io/tags.html)
 
 ## Posts
 
