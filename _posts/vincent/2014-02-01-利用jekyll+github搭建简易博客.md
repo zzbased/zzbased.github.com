@@ -43,3 +43,5 @@ tags : [jekyll, blog]
 编辑时，对于post文章的基本配置，请参考[常见的jekyll配置](http://jekyllbootstrap.com/usage/blog-configuration.html)
 
 6. 如果不喜欢页面最下面的footer, 可以在“./_includes/themes/twitter/default.html”文件中，把footer屏蔽掉。不过建议还是留着，可以让更多的人接触到这项工具。如果不喜欢disqus中的广告，请参考[关掉Jekyll Bootstrap的comments广告](http://stackoverflow.com/questions/19577049/jekyll-bootstrap-commenting-function-without-advertisement)
+
+7. 目前博客有一个问题：在page页，不能加载css，所以导致渲染有问题。进一步debug发现，是在JB/setup下，page.theme.name没能获取到对应的值。之后在mac机器上，拿原生的jekyll调试一下试试。我先手动直接把那个字段改了试一下，通过修改_config.xml中的ASSET_PATH。
